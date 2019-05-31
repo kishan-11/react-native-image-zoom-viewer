@@ -18,7 +18,7 @@
   "author": "Kishan Patel",
   "license": "MIT",
   "dependencies": {
-    "react-native-image-pan-zoom": "@housing/react-native-image-pan-zoom"
+    "@housing/react-native-image-pan-zoom": "1.0.0"
   },
   "peerDependencies": {
     "react": "*",
