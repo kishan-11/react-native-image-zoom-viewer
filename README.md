@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Getting Started
 
 ### Installation
@@ -97,3 +98,6 @@ export default class App extends React.Component {
 ### Dependence
 
 Depend on `@housing/react-native-image-pan-zoom`: https://github.com/housinghq/react-native-image-pan-zoom.git
+=======
+# react-native-image-zoom-viewer
+>>>>>>> d94c13bcf07921fdb0057a9e0f281ec31be5e46b
