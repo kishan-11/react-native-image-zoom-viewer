@@ -51,7 +51,6 @@ export class Props {
   /**
    * 是否开启长按保存到本地的功能
    */
-  public saveToLocalByLongPress?: boolean = true;
 
   /**
    * 是否允许缩放图片
@@ -84,83 +83,11 @@ export class Props {
   public pageAnimateTime?: number = 100;
 
   /**
-   * 长按图片的回调
-   */
-  public onLongPress?: (image?: IImageInfo) => void = () => {
-    //
-  };
-
-  /**
-   * 单击回调
-   */
-   public onClick?:  (close?: () => any, currentShowIndex?: number) => void = () => {
-    //
-  };
-
-  /**
-   * 双击回调
-   */
-  public onDoubleClick?: (close?: () => any) => void = () => {
-    //
-  };
-
-  /**
-   * 图片保存到本地方法，如果写了这个方法，就不会调取系统默认方法
-   * 针对安卓不支持 saveToCameraRoll 远程图片，可以在安卓调用此回调，调用安卓原生接口
-   */
-  public onSave?: (src: string | undefined) => void = () => {
-    //
-  };
-
-  /**
-   * 自定义头部
-   */
-  public renderHeader?: (currentIndex?: number) => React.ReactElement<any> = () => {
-    return null as any;
-  };
-
-  /**
-   * 自定义尾部
-   */
-  public renderFooter?: (currentIndex?: number) => React.ReactElement<any> = () => {
-    return null as any;
-  };
-
-  /**
-   * 自定义计时器
-   */
-  public renderIndicator?: (currentIndex?: number, allSize?: number) => React.ReactElement<any> = (
-    currentIndex?: number,
-    allSize?: number
-  ) => {
-    return React.createElement(
-      View,
-      { style: simpleStyle.count },
-      React.createElement(Text, { style: simpleStyle.countText }, currentIndex + '/' + allSize)
-    );
-  };
-
-  /**
    * Render image component
    */
   public renderImage?: (props: any) => React.ReactElement<any> = (props: any) => {
     return React.createElement(Image, props);
   };
-
-  /**
-   * 自定义左翻页按钮
-   */
-  public renderArrowLeft?: () => React.ReactElement<any> = () => {
-    return null as any;
-  };
-
-  /**
-   * 自定义右翻页按钮
-   */
-  public renderArrowRight?: () => React.ReactElement<any> = () => {
-    return null as any;
-  };
-
   /**
    * 弹出大图的回调
    */
@@ -188,14 +115,6 @@ export class Props {
   public loadingRender?: () => React.ReactElement<any> = () => {
     return null as any;
   };
-
-  /**
-   * 保存到相册的回调
-   */
-  public onSaveToCamera?: (index?: number) => void = () => {
-    //
-  };
-
   /**
    * 当图片切换时触发
    */
@@ -231,7 +150,6 @@ export class State {
   /**
    * 是否出现功能菜单
    */
-  public isShowMenu?: boolean = false;
 }
 
 export interface IImageInfo {

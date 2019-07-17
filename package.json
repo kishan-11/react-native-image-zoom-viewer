@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/housinghq/react-native-image-zoom-viewer.git"
+    "url": "git+https://github.com/kishan-11/react-native-image-zoom-viewer.git"
   },
   "keywords": [
     "image-viewer"
@@ -18,7 +18,7 @@
   "author": "Kishan Patel",
   "license": "MIT",
   "dependencies": {
-    "@housing/react-native-image-pan-zoom": "1.0.0"
+    "react-native-image-pan-zoom": "git+https://github.com/kishan-11/react-native-image-zoom.git"
   },
   "peerDependencies": {
     "react": "*",
